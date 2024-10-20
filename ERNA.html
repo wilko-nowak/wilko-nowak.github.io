@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Wilko Nowak</title>
+	
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="LOOKERNA.css"> 
+		<link rel="icon" href="Bilder/WWN-1.ico">
+		
+
+</head>
+<body>
+
+	<header>
+        <h1>Stahl mit Seele</h1>
+    </header>
+		
+    <nav>
+       <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="ERNA.html">Werke</a></li>
+			<li><a href="KLAUS.html">Audi A2</a></li>		
+            <li><a href="PETER.html">Kontakt</a></li>
+        </ul>
+    </nav>
+	
+	<footer>
+        <p>&copy; 2024 Wilko Nowak</p>
+    </footer>
+	
+	<!-- !!!!!!!!!!!!Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt!!!!!!!!!!!-->
+	<!-- !!!!!!!!!!!!Ganz wichtig ist das bild mittig zu zentrieren weil sonst wiedergabe fehler auf der Webseite entstehen!!!!!!!!!!-->
+	<section id="werke">
+		<h1 class="werke-ueberschrift">Meine Werke</h1>
+		<div class="werke-container">
+			<div class="werk" id="werk1">
+				<div class="kreis" onmouseover="scrollToTopIfNeeded(1)" onclick="zeigeWerkInfo('werk1')">
+					<img src="Bilder/hund-wildschwein-hybrid_fertig.png" alt="Hund-Wildschwein-Hybrid"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk2">
+				<div class="kreis" onmouseover="scrollToTopIfNeeded(2)" onclick="zeigeWerkInfo('werk2')">
+					<img src="Bilder/die_sandfrau_fertig.png" alt="Die Sandfrau"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk3">
+				<div class="kreis" onmouseover="scrollToTopIfNeeded(3)" onclick="zeigeWerkInfo('werk3')">
+					<img src="Bilder/puffel_fertig.png" alt="Puffel"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk4">
+				<div class="kreis" onmouseover="scrollToBottomIfNeeded(4)" onclick="zeigeWerkInfo('werk4')">
+					<img src="Bilder/mr.pie_fertig.png" alt="MR.π"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk5">
+				<div class="kreis" onmouseover="scrollToBottomIfNeeded(5)" onclick="zeigeWerkInfo('werk5')">
+					<img src="Bilder/optimum_prime_fertig.png" alt="Optimum Prime"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<!-- Hier witere Werke Hinzufügen -->
+		</div>
+			
+			<div id="werk-info-modal" class="modal">
+				<span class="close" onclick="schliesseWerkInfo()">&times;</span>
+				<div id="werk-details" class="modal-content"></div> 
+			</div>
+		
+	</section>
+			<script src="JavaERNA.js"></script>
+
+    <!-- Bilder für das Modal Definieren (für java) -->
+    <div id="bilder">
+		<img id="image1" class="hidden" src="Bilder/HWHWN.jpg" alt="Hund-Wildschwein-Hybrid" />
+        <img id="image2" class="hidden" src="Bilder/DSETA.jpg" alt="Die Sandfrau" />
+        <img id="image3" class="hidden" src="Bilder/PUWN.jpg" alt="Puffel" />
+		<img id="image4" class="hidden" src="Bilder/MPWN.jpg" alt="Mr.π" />
+        <img id="image5" class="hidden" src="Bilder/OPWN.jpg" alt="Optimum Prime" />
+		
+	</div>
+	
+	 	  
+</body>
+</html>
