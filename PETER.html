@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Wilko Nowak</title>
+	
+		<link rel="stylesheet" href="LOOKPETER.css"> 
+		<link rel="shortcut icon" href="favicon_48x48.png" type="image/x-icon">
+		
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+	<header>
+        <h1>Kontaktaufnahme</h1>
+    </header>
+		
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="ERNA.html">Werke</a></li>
+			<li><a href="KLAUS.html">Audi A2</a></li>			
+            <li><a href="PETER.html">Kontakt</a></li>
+        </ul>
+    </nav>
+	
+	<footer>
+        <p>&copy; 2024 Wilko Nowak</p>
+    </footer>
+	
+	<section>
+		<div class="form-container">
+			<div id="TZ">Kontaktieren Sie mich!</div>
+			<form action="https://formspree.io/f/mjkvkvpk" method="POST">
+				<label for="reason">Worum geht es?</label>
+				<select id="reason" name="reason" required>
+					<option value="" disabled selected>Bitte wählen...</option>
+					<option value="Audi A2">Audi A2</option>
+					<option value="Sonstiges">Sonstiges</option>
+					<option value="Webseite">Webseite</option>
+					<option value="Werke">Werke</option>
+				</select>
+
+				<label for="first-name">Vorname:</label>
+				<input type="text" id="first-name" name="first-name" required>
+
+				<label for="last-name">Nachname:</label>
+				<input type="text" id="last-name" name="last-name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Nachricht:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<input type="submit" value="Senden">
+			</form>
+			
+		</div>
+	</section>
+	
+</body>
+</html>
