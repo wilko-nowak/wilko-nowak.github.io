@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Offizielle Website von Wilko Nowak. Dualer Student an der DHBW Friedrichshafen. Informationen über meine Biographie, Werke und Kontaktmöglichkeiten.">
+
+	<meta name="keywords" content="Wilko Nowak, duales Studium, DHBW Friedrichshafen, Audi A2, Werke, Braaskate, braaskate, Goltoft, die Sandfrau, Die Sandfrau, Die sandfrau, Stahl mit Sele, Kunst">
+	<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "Person",
+	  "name": "Wilko Nowak",
+	  "jobTitle": "Dualer Student",
+	  "url": "https://www.wilko-nowak.de",
+	 }
+	</script>	
+	
+		<title>Wilko Nowak</title>	
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="lookumfrage.css">
+		<link rel="shortcut icon" href="Bilder/favicon.ico" type="image/x-icon">
+		
+</head>
+
+
+<body>
+
+	<header>
+        <h1>Umfrage zur Sandfrau</h1>
+    </header>
+	
+	 <nav>
+       <ul>
+            <li><a href="index.html">Zurück zur Startseite</a></li>           			
+        </ul>
+    </nav>
+			
+	<footer>
+        <p>&copy; 2024 Wilko Nowak</p>
+    </footer>
+	
+    <section id="umfrage">
+    
+        <h2>Umfrage zur Sandfrau</h2> 
+        
+        <div class="frage">
+            <p>Haben Sie die Novelle <em>Der Sandmann</em> von E.T.A. Hoffmann gelesen?</p>
+            <input type="radio" name="gelesen" value="Ja" onclick="zeigeFragenGelesen()"> Ja<br>
+            <input type="radio" name="gelesen" value="Nein" onclick="zeigeFragenNichtGelesen()"> Nein
+        </div>
+
+        <div id="fragenGelesen" style="display: none;">
+            <p>1. Was verbinden Sie persönlich mit der Geschichte von <em>Der Sandmann</em>?</p>
+            <textarea rows="4"></textarea>
+
+            <p>Können Sie eine Verbindung zwischen der Novelle <em>Der Sandmann</em> und dem Kunstwerk <em>Die Sandfrau</em> herstellen? Wenn ja, welche Rückschlüsse ziehen Sie?</p>
+            <textarea rows="4"></textarea>
+        </div>
+
+        <div id="fragenNichtGelesen" style="display: none;">
+            <p>1. Was empfinden oder assoziieren Sie spontan, wenn Sie das Kunstwerk <em>Die Sandfrau</em> betrachten?</p>
+            <textarea rows="4"></textarea>
+
+            <p>Können Sie eine Verbindung zwischen der Novelle Der Sandmann und dem Kunstwerk <em>Die Sandfrau</em> herstellen? Wenn ja, welche Rückschlüsse ziehen Sie?</p>
+            <textarea rows="4"></textarea>
+        </div>
+
+        <div id="bewertung">
+            <h3>Bewerten Sie das Kunstwerk</h3>
+
+            <div class="slider-container">
+                <p>Wie ansprechend finden Sie das visuelle Design <em>der Sandfrau</em>?</p>
+                   <div class="slider-labels">
+				<span>Sehr</span>
+				<input type="range" min="1" max="100" value="50" id="slider1">
+				<span>Garnicht</span>
+        </div>
+            </div>
+
+            <div class="slider-container">
+                <p>Wie stark löst <em>die Sandfrau</em> emotionale Reaktionen in Ihnen aus?</p>
+                 <input type="range" min="1" max="100" value="50" id="slider2">
+            </div>
+
+            <div class="slider-container">
+                <p>Wie anregend finden Sie das Kunstwerk hinsichtlich seiner Ausdruckskraft und Details?</p>
+                <input type="range" min="1" max="100" value="50" id="slider3">
+            </div>
+
+            <div class="slider-container">
+                <p>Wie eindrucksvoll finden Sie die Materialien, aus denen <em>die Sandfrau</em> geschaffen ist?</p>
+                <input type="range" min="1" max="100" value="50" id="slider4">
+            </div>
+
+            <button onclick="umfrageAbsenden()">Umfrage absenden</button>
+        </div>
+
+        <div id="ergebnis" style="display:none; margin-top: 20px;">
+            <h3>Vielen Dank für Ihre Teilnahme!</h3>
+        </div>
+		
+	<script>
+        function zeigeFragenGelesen() {
+            document.getElementById("fragenGelesen").style.display = "block";
+            document.getElementById("fragenNichtGelesen").style.display = "none";
+        }
+
+        function zeigeFragenNichtGelesen() {
+            document.getElementById("fragenGelesen").style.display = "none";
+            document.getElementById("fragenNichtGelesen").style.display = "block";
+        }
+
+        function umfrageAbsenden() {
+            alert("Vielen Dank für Ihre Teilnahme!");
+            document.getElementById("ergebnis").style.display = "block";
+        }
+	</script>
+	 </section>
+	
+</body>
+</html>
+

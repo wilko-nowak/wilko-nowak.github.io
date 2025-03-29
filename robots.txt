@@ -1,0 +1,23 @@
+User-agent: *
+Sitemap: https://www.wilko-nowak.de/sitemap.xml
+
+Allow: /index.html
+
+Disallow: /Bilder/yt_icon_rgb.png
+Disallow: /Bilder/LI-In-Bug.png
+
+Disallow: /Bilder/PUWN.jpg
+Disallow: /Bilder/OPWN.jpg
+Disallow: /Bilder/MPWN.jpg
+Disallow: /Bilder/HWHWN.jpg
+Disallow: /Bilder/DSETA.jpg
+
+Disallow: /Bilder/A21.jpg
+Disallow: /Bilder/A22.jpg
+
+Disallow: /Bilder/puffel_fertig.png
+Disallow: /Bilder/optimum_prime_fertig.png
+Disallow: /Bilder/mr.pie_fertig.png
+Disallow: /Bilder/hund-wildschwein-hybrid_fertig.png
+Disallow: /Bilder/die_sandfrau_fertig.png
+
