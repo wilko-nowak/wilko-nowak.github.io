@@ -1,0 +1,125 @@
+.audi-section {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa); 
+    border: 1px solid #ced4da; 
+    border-radius: 12px; 
+    padding: 30px; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+	margin-top:150px;
+	margin-bottom: 10px;
+}
+
+#S1, #S3 {
+    margin: 15px 0; 
+    line-height: 1.7; 
+    color: #343a40; 
+}
+
+.audi-section a {
+    color: #007bff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+}
+
+.audi-section a:hover {
+    color: #0056b3; 
+    text-decoration: underline; 
+}
+
+.video-section h2 {
+    color: #343a40; 
+    margin-bottom: 20px; 
+}
+
+.video-section {
+    padding: 20px;
+    max-width: 800px; 
+    margin: auto; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff, #f8f9fa); 
+    border: 1px solid #ced4da; 
+    border-radius: 12px;
+    text-align: center;
+    width: 100%; 
+}
+
+.video-section iframe {
+    width: 90%; 
+    aspect-ratio: 16 / 9; 
+    max-width: 600px; 
+    border-radius: 12px; 
+    height: auto; 
+}
+
+#image-container1{
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 10px 0; 
+	padding-bottom:60px;
+}
+
+#image-container2{
+	display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 10px 0; 
+	padding-bottom:100px;
+}
+
+#image-container1 img,
+#image-container2 img {
+    max-width: 30%; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+@media (max-width: 768px) {	
+	.audi-section {
+        padding: 20px; 
+        max-width: 75%; 
+        margin: 0 auto; 
+        margin-top: 150px; 
+    }
+		
+    .audi-section p {
+        margin: 10px 0; 
+        line-height: 1.5;
+    }
+    
+    .audi-section a {
+        font-size: 14px; 
+    }
+		   
+    .video-section h2 {
+        font-size: 1.4em; 
+    }
+	
+	.video-section {
+        margin-top: 10px; 
+		max-width: 70%;
+    }
+	
+	  .video-section iframe {
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+	
+    #image-container1 img,
+    #image-container2 img {
+        max-width: 70%; 
+    }
+
+    #image-container1{
+        gap: 10px; 
+		padding-bottom: 30px;
+    }
+		
+	#image-container2{
+		gap: 10px; 
+		padding-bottom: 90px;
+	}		
+}
