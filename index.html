@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="description" content="Offizielle Website von Wilko Nowak. Dualer Student an der DHBW Friedrichshafen. Informationen über meine Biographie, Werke und Kontaktmöglichkeiten.">
+	<meta name="keywords" content="Wilko Nowak, duales Studium, DHBW Friedrichshafen, Audi A2, Werke, die Sandfrau, Die Sandfrau, Die sandfrau, Stahl mit Sele, Kunst">
+	
+	<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "Person",
+	  "name": "Wilko Nowak",
+	  "jobTitle": "Dualer Student & Künstler",
+	  "url": "https://www.wilko-nowak.de",
+	  "sameAs": [
+		"https://www.linkedin.com/in/wilko-nowak-a3321a338/",
+		"https://www.youtube.com/@wilkonowak3674",
+		"https://a2-freun.de/forum/profile/42564-wnowak/"
+	  ]
+	 }
+	</script>	
+	
+		<title>Wilko Nowak</title>
+	
+		<script src="java/Javaindex.js" defer></script>
+		<link rel="stylesheet" href="css/lookindex.css"> 
+		<link rel="stylesheet" href="css/strucktur.css"> 
+		<link rel="shortcut icon" href="Bilder/strucktur/favicon.ico" type="image/x-icon"> 		
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<div id="cookieConsent">
+		<p>Diese Website verwendet Cookies, um die Nutzererfahrung zu verbessern und die Nutzung zu analysieren. 
+		  Durch die Nutzung dieser Website stimmen Sie der Verwendung von Cookies gemäß unserer 
+		  <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>.
+		</p>
+		<button id="acceptCookies">Akzeptieren</button>
+	 </div>
+	
+	<header>
+        <h1 id="ueberschrift">Stahl mit Seele</h1>
+		<div class="Flagge" onclick="wechselbitte()">			
+		   <img class="übersetzung" src="Bilder/strucktur/deueng.png" alt="Flagge"/>
+		</div>
+    </header>
+		
+    <nav>
+       <ul>
+            <li><a href="index.html" id="Seite1"> Werke</a></li>
+            <li><a href="biographie.html" id="Seite2">Biografie</a></li>
+			<li><a href="audia2.html" id="Seite3">Audi A2</a></li>		
+            <li><a href="kontaktformular.html" id="Seite4">Kontakt</a></li>
+        </ul>
+    </nav>
+	
+	<footer>
+         <div class="copyringt">
+			<p>&copy; 2025 Wilko Nowak</p>
+			<p><a href="datenschutz.html" class="datenschutz-link">Datenschutz</a></p>
+		</div>
+		<div class="verlinkungen">
+			<a href="https://www.linkedin.com/in/wilko-nowak-a3321a338/" target="_blank" aria-label="LinkedIn">
+            <img class="linkedin-icon" src="Bilder/strucktur/LI-In-Bug.png" alt="LinkedIn" />
+			</a>
+			<a href="https://www.youtube.com/@wilkonowak3674" target="_blank" aria-label="YouTube">
+            <img class="youtube-icon" src="Bilder/strucktur/yt_icon_rgb.png" alt="YouTube" />
+			</a>
+			<a href="https://a2-freun.de/forum/profile/42564-wnowak/" target="_blank" aria-label="YouTube">
+            <img class="Audi_A2_Forum" src="https://a2-freun.de/forum/uploads/set_resources_17/55b88a4ddc2e0fa3f4a95a6c3652ad3a_a2-clublogo.svg" alt="Audi_A2_Forum" />
+			</a>		
+		</div>
+    </footer>
+	
+	<!-- !!!!!!!!!!!!Die Bilder der werke müssen immer 4*3 mit 1800px als kreis motiv ertstellt werden damit es syncron bleibt!!!!!!!!!!!-->
+	<!-- !!!!!!!!!!!!Ganz wichtig ist das bild mittig zu zentrieren weil sonst wiedergabe fehler auf der Webseite entstehen!!!!!!!!!!-->
+	
+	<section id="werke">
+	
+	
+
+	
+		<h1 class="werke-ueberschrift" id="ue1">Meine Werke</h1>
+		
+		<!--Temporär-->
+		<p style="font-size:1.2em; margin-bottom:10px;">
+		  Ich lade Sie herzlich ein, mich auf der Kunstmesse Burg Stettenfels zu besuchen. 
+		  Es würde mich freuen, Sie dort begrüßen zu dürfen.
+		</p>
+		<a href="https://arte-kunstmessen.de/veranstaltung/stettenfels-2025/" target="_blank">
+		  <img src="Bilder/ARTeKunstmesseStettenfels2025_Facebook-Titelbild.png" alt="Messe-Bild" style="width:300px; height:auto; border-radius:8px;">
+		</a>
+		<!--Temporär-->
+		
+		<div class="werke-container">
+			<div class="werk" id="werk1">
+				<div class="kreis" onclick="zeigeWerkInfo('werk1')">
+					<img src="Bilder/index/kreis/hund-wildschwein-hybrid_fertig.png" alt="Hund-Wildschwein-Hybrid"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk2">
+				<div class="kreis" onclick="zeigeWerkInfo('werk2')">
+					<img src="Bilder/index/kreis/die_sandfrau_fertig.png" alt="Die Sandfrau"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk3">
+				<div class="kreis" onclick="zeigeWerkInfo('werk3')">
+					<img src="Bilder/index/kreis/puffel_fertig.png" alt="Puffel"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk4">
+				<div class="kreis" onclick="zeigeWerkInfo('werk4')">
+					<img src="Bilder/index/kreis/mr.pie_fertig.png" alt="MR.π"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk5">
+				<div class="kreis" onclick="zeigeWerkInfo('werk5')">
+					<img src="Bilder/index/kreis/optimum_prime_fertig.png" alt="Optimum Prime"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk6">
+				<div class="kreis" onclick="zeigeWerkInfo('werk6')">
+					<img src="Bilder/index/kreis/verrotetes_ideal_fertig.png" alt="Verrostetes Ideal"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<!-- Hier witere Werke Hinzufügen -->
+		</div>
+			
+			<div id="werk-info-modal" class="modal">
+				<span class="close" onclick="schliesseWerkInfo()">&times;</span>
+				<div id="werk-details" class="modal-content"></div> 
+			</div>
+		
+	</section>
+	
+	<section id="newsletter" class="newsletter-section">
+	  <h2 class="newsletter-title" id="th1">Neuigkeiten & Werke direkt ins Postfach</h2>
+	  <form action="https://formspree.io/f/mdkzyynb" method="POST" class="newsletter-form">
+		<input type="email" id="newsletter-email" name="email" required placeholder="Ihre E-Mail-Adresse" class="newsletter-input">
+		<button type="submit" id="newsletter-button" class="newsletter-button">Mitreisen</button>
+
+	  </form>
+	</section>
+	
+	
+	<br><br><br><br>
+	
+    <!-- Bilder für das Modal Definieren (für java) -->
+    <div id="bilder">
+		<img id="image1" class="hidden" src="Bilder/index/modal/HWHWN.jpg" alt="Hund-Wildschwein-Hybrid" />
+        <img id="image2" class="hidden" src="Bilder/index/modal/DSETA.jpg" alt="Die Sandfrau" />
+        <img id="image3" class="hidden" src="Bilder/index/modal/PUWN.jpg" alt="Puffel" />
+		<img id="image4" class="hidden" src="Bilder/index/modal/MPWN.jpg" alt="Mr.π" />
+        <img id="image5" class="hidden" src="Bilder/index/modal/OPWN.jpg" alt="Optimum Prime" />
+		<img id="image6" class="hidden" src="Bilder/index/modal/VIWN.jpg" alt="Verrostetes Ideal" />		
+	</div>
+		 	  
+</body>
+</html>
