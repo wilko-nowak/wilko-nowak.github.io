@@ -1,0 +1,28 @@
+User-agent: *
+Sitemap: https://www.wilko-nowak.de/sitemap.xml
+
+Allow: /index.html
+
+Disallow: /Bilder/strucktur/yt_icon_rgb.png
+Disallow: /Bilder/strucktur/LI-In-Bug.png
+Disallow: /Bilder/strucktur/favicon.ico
+Disallow: /Bilder/strucktur/deueng.png
+
+
+Disallow: /Bilder/index/modal/PUWN.jpg
+Disallow: /Bilder/index/modal/OPWN.jpg
+Disallow: /Bilder/index/modal/MPWN.jpg
+Disallow: /Bilder/index/modal/HWHWN.jpg
+Disallow: /Bilder/index/modal/DSETA.jpg
+Disallow: /Bilder/index/modal/VIWN.jpg
+
+Disallow: /Bilder/audi/A21.jpg
+Disallow: /Bilder/audi/A22.jpg
+
+Disallow: /Bilder/index/kreis/puffel_fertig.png
+Disallow: /Bilder/index/kreis/optimum_prime_fertig.png
+Disallow: /Bilder/index/kreis/mr.pie_fertig.png
+Disallow: /Bilder/index/kreis/hund-wildschwein-hybrid_fertig.png
+Disallow: /Bilder/index/kreis/die_sandfrau_fertig.png
+Disallow: /Bilder/index/kreis/verrotetes_ideal_fertig.png
+
