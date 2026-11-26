@@ -1,0 +1,20 @@
+# suchmaschinen
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: Applebot
+Disallow: /bilder-und-videos/
+
+# google bildersuche
+User-agent: Googlebot-Image
+Allow: /favicon/
+Disallow: /
+
+# ki training sperren
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Disallow: /
+
+# andere bots sperren
+User-agent: *
+Disallow: /

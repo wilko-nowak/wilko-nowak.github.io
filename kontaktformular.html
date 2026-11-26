@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex, nofollow">
+	
+	<title>Kontakt</title>
+	
+	<script src="java/Javakontakformular.js" defer></script>
+	<link rel="stylesheet" href="css/lookkontaktformular.css"> 
+	<link rel="stylesheet" href="css/strucktur.css"> 
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96.png">
+	<link rel="icon" href="/favicon/favicon.ico" sizes="16x16 32x32 48x48">
+	<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+		
+    <link rel="stylesheet" href="fonts/fonts.css"> 
+</head>
+<body>
+
+	<header>
+        <h1 id="ueberschrift">Kontaktaufnahme</h1>
+		<div class="Flagge" onclick="wechselbitte()">			
+		   <img class="übersetzung" src="bilder-und-videos/strucktur/deueng.png" alt="Flagge"/>
+		</div>
+    </header>
+		
+    <nav>
+        <ul>
+            <li><a href="index.html" id="Seite1"> Werke</a></li>
+            <li><a href="biographie.html" id="Seite2">Biografie</a></li>
+			<li><a href="audia2.html" id="Seite3">Audi A2</a></li>		
+            <li><a href="kontaktformular.html" id="Seite4">Kontakt</a></li>
+        </ul>
+    </nav>
+	
+	<footer>
+        <div class="copyringt">
+			<p>&copy; 2026 Wilko Nowak</p>
+			<p><a href="datenschutz.html" class="datenschutz-link">Datenschutz</a></p>
+		</div>
+		<div class="verlinkungen">
+			<a href="https://www.linkedin.com/in/wilko-nowak-a3321a338/" target="_blank" aria-label="LinkedIn">
+            <img class="linkedin-icon" src="bilder-und-videos/strucktur/LI-In-Bug.png" alt="LinkedIn" />
+			</a>
+			<a href="https://a2-freun.de/forum/profile/42564-wnowak/" target="_blank" aria-label="Audi A2 Forum">
+            <img class="Audi_A2_Forum" src="bilder-und-videos/strucktur/a2-clublogo.svg" alt="Audi_A2_Forum" />
+			</a>		
+		</div>
+    </footer>
+	
+	<section>
+		<div class="form-container">
+			<div id="TZ">Kontaktieren Sie mich!</div>
+			<form action="https://formspree.io/f/xbgowpqo" method="POST">
+				<!-- hilfe bei einordnung im privaten email dienst -->
+				<input type="hidden" name="_subject" value="Neue Nachricht von wilko-nowak.de">
+
+				<!-- bot falle -->
+				<div class="bot-falle" aria-hidden="true">
+					<label for="website">Bitte dieses Feld leer lassen</label>
+					<input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off">
+				</div>
+
+				<label for="reason" id="frage1">Worum geht es?</label>
+				<select id="reason" name="reason" required>
+					<option value="" disabled selected id="frage11">Bitte wählen...</option>
+					<option value="Audi A2" id="f1">Audi A2</option>
+					<option value="Sonstiges" id="f2">Sonstiges</option>
+					<option value="Webseite" id="f3">Webseite</option>
+					<option value="Werke" id="f4">Werke</option>
+				</select>
+
+				<label for="first-name" id="frage2">Vorname:</label>
+				<input type="text" id="first-name" name="first-name" required>
+
+				<label for="last-name" id="frage3">Nachname:</label>
+				<input type="text" id="last-name" name="last-name" required>
+
+				<label for="email" id="frage4">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message" id="frage5">Nachricht:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<p class="datenschutz-hinweis" id="hinweis">Ihre Angaben werden über den Dienst Formspree an mich übermittelt und nur zur Beantwortung Ihrer Nachricht verwendet. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>. Sie können mir auch direkt an <a href="mailto:kontakt@wilko-nowak.de">kontakt@wilko-nowak.de</a> schreiben.</p>
+
+				<button type="submit" id="senden">Senden</button>
+			</form>
+			
+		</div>
+	</section>
+
+	<!--
+	<div class="footer-button">
+        <a href="nurfuerppp/praesentation.html" class="footer-btn">PPPNAME</a>
+    </div>
+	-->
+	
+</body>
+</html>

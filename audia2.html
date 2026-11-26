@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex, nofollow">
+	<title>Audi A2</title>
+	
+	<script src="java/Javaaudia2.js" defer></script>	
+	<link rel="stylesheet" href="css/lookaudia2.css">
+	<link rel="stylesheet" href="css/strucktur.css">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96.png">
+	<link rel="icon" href="/favicon/favicon.ico" sizes="16x16 32x32 48x48">
+	<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+		
+
+</head>
+<body>
+
+	<header>
+        <h1 id="ueberschrift">Der Audi A2</h1>
+		<div class="Flagge" onclick="wechselbitte()">			
+		   <img class="übersetzung" src="bilder-und-videos/strucktur/deueng.png" alt="Flagge" onclick="Spiegeln()"/>
+		</div>
+    </header>
+		
+    <nav>
+       <ul>
+            <li><a href="index.html" id="Seite1"> Werke</a></li>
+            <li><a href="biographie.html" id="Seite2">Biografie</a></li>
+			<li><a href="audia2.html" id="Seite3">Audi A2</a></li>		
+            <li><a href="kontaktformular.html" id="Seite4">Kontakt</a></li>
+        </ul>
+    </nav>
+	
+	<footer>
+        <div class="copyringt">
+			<p>&copy; 2026 Wilko Nowak</p>
+			<p><a href="datenschutz.html" class="datenschutz-link">Datenschutz</a></p>
+		</div>
+		<div class="verlinkungen">
+			<a href="https://www.linkedin.com/in/wilko-nowak-a3321a338/" target="_blank" aria-label="LinkedIn">
+            <img class="linkedin-icon" src="bilder-und-videos/strucktur/LI-In-Bug.png" alt="LinkedIn" />
+			</a>
+			<a href="https://a2-freun.de/forum/profile/42564-wnowak/" target="_blank" aria-label="Audi A2 Forum">
+            <img class="Audi_A2_Forum" src="bilder-und-videos/strucktur/a2-clublogo.svg" alt="Audi_A2_Forum" />
+			</a>		
+		</div>
+    </footer>
+	
+	<section class="audi-section">
+		<p id="S1">Sehr geehrte Audi A2-Fahrer,</p>
+		<span id="S21">wenn Sie ebenfalls einen Audi A2 fahren, habe ich erfreuliche Nachrichten für Sie. Sollten Sie Inspiration für Umbauten oder Reparaturen benötigen, lade ich Sie herzlich ein, mein Benutzerkonto</span> <a href="https://a2-freun.de/forum/profile/42564-wnowak/" target="_blank"> wnowak </a> <span id="S22">im Audi A2 Forum zu besuchen.
+
+		Dort finden Sie einige Ideen, die Ihnen bei Themen wie Radkappenreparaturen oder dem Soundsystem helfen können.
+
+		Ich freue mich auf Ihren Besuch und darauf, den Austausch über unsere gemeinsamen Interessen zu fördern.</span>
+
+		<p id="S3">Beste Grüße</p> 
+	</section>
+	
+	<section class="video-section">
+        <h2 id="S4">Sehen Sie sich auch gerne ein Video über den Audi A2 an</h2>
+		 <div class="video-wrapper">
+		 	<video id="a2-video" autoplay muted loop playsinline preload="auto">
+		 		<source src="bilder-und-videos/audi/A2_FPV_diskret_komprimiert.mp4" type="video/mp4" onerror="if (window.videoFehler) { videoFehler(); } else { this.parentNode.dataset.fehler = '1'; }">
+		 	</video>
+		 	<button type="button" id="ton-knopf" class="ton-knopf" onclick="tonUmschalten()" aria-pressed="false" aria-label="Ton an" title="Ton an"><img id="ton-bild" src="bilder-und-videos/strucktur/ton-aus.svg" alt="" width="24" height="24"></button>
+		 	<p id="video-fehler" class="video-fehler" role="alert" hidden>Fehler beim Laden des Videos 42</p>
+		 </div>
+    </section>
+	
+	
+	
+	<div id="image-container1">
+       <img src="bilder-und-videos/audi/A21.jpg" alt="Audi A2 an der Dune du Pilat">
+	</div>
+	 
+	 
+	<div id="image-container2">
+	   <img src="bilder-und-videos/audi/A22.jpg" alt="Audi A2 morgen in Tauberrettersheim">
+	</div>
+	 
+</body>
+</html>

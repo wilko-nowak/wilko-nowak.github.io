@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="description" content="Was passiert, wenn Stahl eine Seele bekommt? Skulpturen wie die Sandfrau, ein Audi A2 und ein offenes Ohr für Kunst und Hobby.">
+	
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Person",
+	  "name": "Wilko Nowak",
+	  "url": "https://wilko-nowak.de"
+	 }
+	</script>	
+	
+		<title>Stahl mit Seele</title>
+	
+		<script src="java/Javaindex.js" defer></script>
+		<link rel="stylesheet" href="css/lookindex.css"> 
+		<link rel="stylesheet" href="css/strucktur.css"> 
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96.png">
+		<link rel="icon" href="/favicon/favicon.ico" sizes="16x16 32x32 48x48">
+		<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+		<link rel="stylesheet" href="fonts/fonts.css">
+</head>
+<body>
+	
+	<header>
+        <h1 id="ueberschrift">Stahl mit Seele</h1>
+		<div class="Flagge" onclick="wechselbitte()">			
+		   <img class="übersetzung" src="bilder-und-videos/strucktur/deueng.png" alt="Flagge"/>
+		</div>
+    </header>
+		
+    <nav>
+       <ul>
+            <li><a href="index.html" id="Seite1"> Werke</a></li>
+            <li><a href="biographie.html" id="Seite2">Biografie</a></li>
+			<li><a href="audia2.html" id="Seite3">Audi A2</a></li>		
+            <li><a href="kontaktformular.html" id="Seite4">Kontakt</a></li>
+        </ul>
+    </nav>
+	
+	<footer>
+         <div class="copyringt">
+			<p>&copy; 2026 Wilko Nowak</p>
+			<p><a href="datenschutz.html" class="datenschutz-link">Datenschutz</a></p>
+		</div>
+		<div class="verlinkungen">
+			<a href="https://www.linkedin.com/in/wilko-nowak-a3321a338/" target="_blank" aria-label="LinkedIn">
+            <img class="linkedin-icon" src="bilder-und-videos/strucktur/LI-In-Bug.png" alt="LinkedIn" />
+			</a>
+			<a href="https://a2-freun.de/forum/profile/42564-wnowak/" target="_blank" aria-label="Audi A2 Forum">
+            <img class="Audi_A2_Forum" src="bilder-und-videos/strucktur/a2-clublogo.svg" alt="Audi_A2_Forum" />
+			</a>		
+		</div>
+    </footer>
+	
+	<!-- !!!!!!!!!!!!Die Bilder der werke müssen immer 4*3 mit 1800px als kreis motiv ertstellt werden damit es syncron bleibt!!!!!!!!!!!-->
+	<!-- !!!!!!!!!!!!Ganz wichtig ist das bild mittig zu zentrieren weil sonst wiedergabe fehler auf der Webseite entstehen!!!!!!!!!!-->
+	
+	<section id="werke">
+	
+	
+
+	
+		<h1 class="werke-ueberschrift" id="ue1">Meine Werke</h1>
+		
+		<!--Temporär-->
+		
+		
+		
+		<!--Temporär-->
+		
+		<div class="werke-container">
+			<div class="werk" id="werk1">
+				<div class="kreis" onclick="zeigeWerkInfo('werk1')">
+					<img src="bilder-und-videos/index/kreis/hund-wildschwein-hybrid_fertig.png" alt="Hund-Wildschwein-Hybrid"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk2">
+				<div class="kreis" onclick="zeigeWerkInfo('werk2')">
+					<img src="bilder-und-videos/index/kreis/die_sandfrau_fertig.png" alt="Die Sandfrau"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk3">
+				<div class="kreis" onclick="zeigeWerkInfo('werk3')">
+					<img src="bilder-und-videos/index/kreis/puffel_fertig.png" alt="Puffel"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk4">
+				<div class="kreis" onclick="zeigeWerkInfo('werk4')">
+					<img src="bilder-und-videos/index/kreis/mr.pie_fertig.png" alt="MR.π"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk5">
+				<div class="kreis" onclick="zeigeWerkInfo('werk5')">
+					<img src="bilder-und-videos/index/kreis/optimum_prime_fertig.png" alt="Optimum Prime"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<div class="werk" id="werk6">
+				<div class="kreis" onclick="zeigeWerkInfo('werk6')">
+					<img src="bilder-und-videos/index/kreis/verrotetes_ideal_fertig.png" alt="Verrostetes Ideal"> <!-- Die Bilder der werke müssen immer 1700px als kreis motiv ertstellt werden damit es syncron bleibt-->
+				</div>
+			</div>
+			<!-- Hier witere Werke Hinzufügen -->
+		</div>
+			
+			<div id="werk-info-modal" class="modal">
+				<span class="close" onclick="schliesseWerkInfo()">&times;</span>
+				<div id="werk-details" class="modal-content"></div> 
+			</div>
+		
+	</section>
+	
+	
+	<br><br><br><br>
+	
+    <!-- Bilder für das Modal Definieren (für java) -->
+    <div id="bilder">
+		<img id="image1" class="hidden" src="bilder-und-videos/index/modal/HWHWN.jpg" alt="Hund-Wildschwein-Hybrid" />
+        <img id="image2" class="hidden" src="bilder-und-videos/index/modal/DSETA.jpg" alt="Die Sandfrau" />
+        <img id="image3" class="hidden" src="bilder-und-videos/index/modal/PUWN.jpg" alt="Puffel" />
+		<img id="image4" class="hidden" src="bilder-und-videos/index/modal/MPWN.jpg" alt="Mr.π" />
+        <img id="image5" class="hidden" src="bilder-und-videos/index/modal/OPWN.jpg" alt="Optimum Prime" />
+		<img id="image6" class="hidden" src="bilder-und-videos/index/modal/VIWN.jpg" alt="Verrostetes Ideal" />		
+	</div>
+		 	  
+</body>
+</html>
